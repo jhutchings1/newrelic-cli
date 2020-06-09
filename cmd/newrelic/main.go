@@ -11,6 +11,7 @@ import (
 	"github.com/newrelic/newrelic-cli/internal/entities"
 	"github.com/newrelic/newrelic-cli/internal/nerdgraph"
 	"github.com/newrelic/newrelic-cli/internal/nerdstorage"
+	"github.com/newrelic/newrelic-cli/internal/nrql"
 	"github.com/newrelic/newrelic-cli/internal/workload"
 )
 
@@ -21,12 +22,14 @@ var (
 
 func init() {
 	// Bind imported sub-commands
-	Command.AddCommand(entities.Command)
 	Command.AddCommand(credentials.Command)
+
 	Command.AddCommand(apm.Command)
 	Command.AddCommand(config.Command)
+	Command.AddCommand(entities.Command)
 	Command.AddCommand(nerdgraph.Command)
 	Command.AddCommand(nerdstorage.Command)
+	Command.AddCommand(nrql.Command)
 	Command.AddCommand(workload.Command)
 }
 
