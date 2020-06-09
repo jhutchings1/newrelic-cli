@@ -21,6 +21,6 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.7.0
 	github.com/stretchr/testify v1.6.1
-	golang.org/x/tools v0.0.0-20200527183253-8e7acdbce89d
+	golang.org/x/tools v0.0.0-20200609164405-eb789aa7ce50
 	gopkg.in/yaml.v2 v2.3.0
 )
